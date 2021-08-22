@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/header_image" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:drawableRight="@drawable/mail"
+            android:layout_margin="30dp"
+            android:padding="15dp"
+            android:inputType="textPersonName"
+            android:hint="@string/enter_email"
+            android:background="@drawable/email"
+            android:drawableEnd="@drawable/mail" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="15dp"
+            android:drawableRight="@drawable/lock"
+            android:inputType="textPersonName"
+            android:hint="@string/enter_password"
+            android:background="@drawable/email"
+            android:drawableEnd="@drawable/lock" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/login"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bottom_image"
+            android:scaleType="fitEnd"/>
+
+    </LinearLayout>
+</LinearLayout>
